@@ -32,3 +32,7 @@ function fightDragon() {
  console.log("Fighting dragon.");
 }
 
+// button1.addEventListener("click",goStore)
+button1.onclick = goStore
+button2.onclick = goCave
+button3.onclick = fightDragon
