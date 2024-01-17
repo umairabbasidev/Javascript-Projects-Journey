@@ -17,6 +17,10 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
+function update(location){
+  
+}
+
 function goTown(){
   button1.innerText = "Go to store";
   button2.innerText = "Go to cave";
