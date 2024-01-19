@@ -52,7 +52,7 @@ function update(location) {
   button1.onclick = location["button functions"][0];
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
-  text.innerText = location.text
+  text.innerText = location.text;
 }
 
 function goTown() {
@@ -66,13 +66,15 @@ function goTown() {
   update(locations[0]);
 }
 function goStore() {
-  button1.innerText = "Buy 10 health (10 gold)";
-  button2.innerText = "Buy weapon (30 gold)";
-  button3.innerText = "Go to town square";
-  button1.onclick = buyHealth;
-  button2.onclick = buyWeapon;
-  button3.onclick = goTown;
-  text.innerText = "You enter the store.";
+  // button1.innerText = "Buy 10 health (10 gold)";
+  // button2.innerText = "Buy weapon (30 gold)";
+  // button3.innerText = "Go to town square";
+  // button1.onclick = buyHealth;
+  // button2.onclick = buyWeapon;
+  // button3.onclick = goTown;
+  // text.innerText = "You enter the store.";
+
+  update(locations[1]);
 }
 
 function goCave() {
