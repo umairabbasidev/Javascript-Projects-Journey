@@ -87,7 +87,7 @@ function goStore() {
 function goCave() {
   // console.log("Going to cave.");
 
-  update(locations[2])
+  update(locations[2]);
 }
 
 function fightDragon() {
@@ -98,12 +98,26 @@ function buyHealth() {
   // gold = gold - 10;
   // health = health + 10;
 
-  gold-= 10;
-  health+= 10;
+  if (gold >= 10) {
+    gold -= 10;
+    health += 10;
+    goldText.innerText = gold;
+    healthText.innerText = health;
+  } else {
+    text.innerText = "You do not have enough gold to buy health.";
+  }
 }
-buyHealth()
+// buyHealth()
 
-function buyWeapon() {}
+function buyWeapon() {
+  // if (gold > 20) {
+  //   gold -= 30;
+  //   goldText.innerText = gold;
+  //   text.innerText = "You now have a dagger. In your inventory you have: stick,dagger";
+  // } else {
+  //   text.innerText = "You do not have enough gold to buy a weapon."
+  // }
+}
 
 function fightSlime() {}
 
