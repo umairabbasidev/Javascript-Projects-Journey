@@ -2,145 +2,110 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <link rel="stylesheet" href="style.css">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Car Search Engine</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/3190/3190249.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Search Engine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
 
 
- <nav>
-  <nav class="navbar navbar-expand-lg bg-body-success bg-dark  textColor">
-   <div class="container-fluid">
-    <a class="navbar-brand  text-white  " href="#">Car Search Engine</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-       <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link text-white" href="#">About </a>
-      </li>
+  <nav>
+    <nav class="navbar navbar-expand-lg bg-body-success bg-dark  textColor">
+      <div class="container-fluid">
+        <a class="navbar-brand  text-white  " href="#">Car Search Engine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About </a>
+            </li>
 
-      <li class="nav-item">
-       <a class="nav-link active text-white" aria-current="page" href="#">Contact Us</a>
-      </li>
-      <li class="nav-item dropdown ">
-       <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Dropdown
-       </a>
-       <ul class="dropdown-menu ">
-        <li><a class="dropdown-item " href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li>
-         <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-       </ul>
-      </li>
-     </ul>
-     <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success text-white" type="submit">Search</button>
-     </form>
-    </div>
-   </div>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item " href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchBtn" class="btn btn-outline-success text-white" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </nav>
- </nav>
 
 
-  <div>
-  <h1>Example heading <span class="badge bg-secondary">New</span></h1>
-  <div class="mainBox">
-   <!-- <div class="card" style="width: 18rem;">
-    <img src="https://cache2.pakwheels.com/system/car_generation_pictures/6392/medium/Toyota_Yaris_Front_Right_Angled.jpg?1650541837" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-   </div> -->
-   <!-- <div class="card" style="width: 18rem;">
-    <img src="https://cache1.pakwheels.com/system/car_generation_pictures/5361/medium/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg?1606903674" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div> -->
-   <!-- </div>
-   <div class="card" style="width: 18rem;">
-    <img src="https://cache4.pakwheels.com/system/car_generation_pictures/5281/medium/rush.jpg?1597230706" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-   </div>
-   <div class="card" style="width: 18rem;">
-    <img src="https://cache4.pakwheels.com/system/car_generation_pictures/7493/medium/20200709104304_ac2.jpg?1685107928" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-   </div>
-   <div class="card" style="width: 18rem;">
-    <img src="https://cache2.pakwheels.com/system/car_generation_pictures/6006/medium/Revo_-_PNG.png?1635483853" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-   </div>
-   <div class="card" style="width: 18rem;">
-    <img src="https://cache1.pakwheels.com/system/car_generation_pictures/7604/medium/20230110_01_06.jpg?1701413618" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-   </div>
-   <div class="card" style="width: 18rem;">
-    <img src="https://cache2.pakwheels.com/system/car_generation_pictures/5443/medium/hiace-cover.jpg?1615979645" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-   </div>
-   <div class="card" style="width: 18rem;">
-    <img src="https://cache4.pakwheels.com/system/car_generation_pictures/7335/medium/Fortuner_-_PNG.png?1677568997" class="card-img-top" alt="...">
-    <div class="card-body">
-     <h5 class="card-title">Card title</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-     </p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-   </div> -->
-  </div>
- </div> 
+  <h4 class="text-primary ToyotaHeading ">Toyota 2024 Car Models, Prices & Pictures in Pakistan</h4>
+  <div class="toyota-logo ">
+    
 
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="wh">
 
-  <script src="app.js"></script>
+      <img src="https://cache4.pakwheels.com/system/car_manufacturers/manufacturers/000/000/042/resized/Tyota.png"
+        alt="" class="">
+
+    </div>
+    <div class=" ">
+
+      <p class="toyotaPara text-tertary">The prices of a Toyota Car in Pakistan start from PKR 4,399,000.0 for a new
+        Toyota Yaris to
+        PKR
+        156,829,000.0 for a new Toyota Land Cruiser. There are currently 12 new car models available at Toyota
+        dealerships
+        across Pakistan.
+
+        Toyota Cars are also widely available in used conditions starting from PKR 135,000 for a used Toyota Corolla to
+        PKR 157,000,000 for a used Toyota Land Cruiser. There are a total of 18393 Toyota Cars available for sale in
+        Pakistan
+
+
+      </p>
+    </div>
+
+
+    
+
+<div class="honda">
+
+
+  
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <script src="app.js">
+
+      
+    </script>
 </body>
 
 </html>

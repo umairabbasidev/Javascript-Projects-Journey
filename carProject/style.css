@@ -1,3 +1,10 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #9badb4!important;
+  /* background-color: red; */
+}
+
+
 .mainBox{
 /* display: flex;
 justify-content: space-around;
@@ -5,3 +12,56 @@ align-items: center;
 flex-wrap: wrap;
 gap: 10px; */
 }
+
+
+.img_hover{
+ 
+}
+
+.wheel{
+ margin: auto;
+   /* border: 1px solid black;
+  width: 200px; */
+  /* height: 100px; */
+  /* background-color: coral; */
+  /* color: white;  */
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+ 50% {transform: rotate(180deg);}
+ }
+
+
+ .toyota-logo{
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center !important;
+  align-items: center;
+  padding: 30px;
+margin-top: 30px;
+margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  /* max-width: 98% */
+  ;
+  flex-wrap: wrap;
+  /* box-shadow: 5px 10px #888888;
+   */
+   /* box-shadow: 5px 10px; */
+  /* flex-direction: row-reverse; */
+  /* max-width: 300px; */
+  /* background-color: black !important;  */
+ }
+
+
+ .toyotaPara{
+  /* max-width: 40%; */
+  /* margin-left: 90px; */
+  /* margin-left: 10px; */
+  /* padding: 20px; */
+ }
+
+
+ .ToyotaHeading{margin-top: 10px;
+
+padding: 10px;}
