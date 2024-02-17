@@ -281,6 +281,7 @@ mask-image: linear-gradient(to bottom,#000000 50%,transparent 100%);
 @media only screen and (max-width: 668px) {
   .header-slider a{
   top: 30%; 
+
   }
 }
 

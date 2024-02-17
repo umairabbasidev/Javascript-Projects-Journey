@@ -87,6 +87,9 @@ next_btn.addEventListener("click", function (e) {
 });
 
 let mainBox = document.createElement("div");
+let mainBoxParent = document.createElement("h1");
+mainBoxParent.innerText = "Hello";
+
 cards.map((card) => {
   let div = document.createElement("div");
   let h3 = document.createElement("h3");
@@ -104,6 +107,9 @@ cards.map((card) => {
   div.style.backgroundColor = "white";
   div.style.borderRadius = "2px";
   div.style.padding = "20px";
+
+  
+
   // mainBox.style.backgroundColor = "red"
   h3.innerText = card.h3;
   img.src = card.img;
@@ -112,8 +118,12 @@ cards.map((card) => {
   p.innerText = card.btn;
   p.style.cursor = "pointer";
   p.style.marginTop = "8px";
-  mainBox.style.position = "absolute";
-  mainBox.style.top = "55%";
+  p.style.color = "#009999";
+  p.style.fontWeight = 500;
+  p.style.fontSize = "13px";
+
+  mainBox.style.marginTop = "-20vw";
+  div.style.zIndex = "1";
 
   div.appendChild(h3);
   div.appendChild(img);
@@ -125,4 +135,5 @@ cards.map((card) => {
 
 // let h1 = document.createElement("h1");
 // h1.innerText = "Umair Abbasi";
+// // h1.style.marginBottom = "90rem"
 // document.body.appendChild(h1);
