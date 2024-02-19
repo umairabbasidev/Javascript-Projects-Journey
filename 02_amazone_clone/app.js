@@ -50,7 +50,7 @@ console.log(scrollConatiner);
 for (let item of scrollConatiner) {
   item.addEventListener("wheel", function (event) {
     event.preventDefault();
-    console.log(event);
+    // console.log(event);
     item.scrollLeft += event.deltaY;
   });
 }
