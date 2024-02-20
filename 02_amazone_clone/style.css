@@ -90,8 +90,9 @@ nav {
   margin-left: 15px;
 }
 
-.nav-sign-in > p {
-  font-size: 11px;
+.nav-sign-in > a {
+  font-size: 13px;
+color: #fff;
 }
 .nav-sign-account {
   display: flex;
