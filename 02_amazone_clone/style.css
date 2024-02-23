@@ -92,7 +92,7 @@ nav {
 
 .nav-sign-in > a {
   font-size: 13px;
-color: #fff;
+  color: #fff;
 }
 .nav-sign-account {
   display: flex;
@@ -291,8 +291,8 @@ color: #fff;
   margin-top: -20vw;
 }
 
-@media screen and (max-width:500px) {
-  .container-box{
+@media screen and (max-width: 500px) {
+  .container-box {
     margin-top: -10vw;
   }
 }
@@ -377,15 +377,14 @@ color: #fff;
   margin-top: 9px;
 }
 
-
-.footer-btn{
+.footer-btn {
   background-color: #37475a;
   padding: 20px;
   margin-top: 20px;
   color: #fff;
   text-align: center;
 }
-footer{
+footer {
   background-color: #232f3e;
 }
 .footer-main {
@@ -394,53 +393,53 @@ footer{
   align-items: flex-start;
   background-color: #232f3e;
   color: #fff;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
   .footer-main {
     /* background-color: red !important; */
     /* display: none; */
     /* display: flex;
     flex-direction: column;
     margin-left: 150px; */
-  /* flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
   }
 
-  .hide{
+  .hide {
     display: none;
   }
-  hr{
+  hr {
     margin-top: 20px;
   }
 }
 
-.footer-main h4{
+.footer-main h4 {
   /* background-color: red; */
   margin-top: 20px;
 }
 
-.footer-main p{
+.footer-main p {
   /* background-color: red; */
   cursor: pointer;
   margin-top: 10px;
 }
 
-.footer-main p:hover{
+.footer-main p:hover {
   text-decoration: underline;
 }
 
-hr{
+hr {
   height: 2px;
   /* color: white; */
   background-color: white;
   margin-bottom: 10px;
 }
 
-footer img{
+footer img {
   /* margin: auto; */
   width: 90px;
   margin: 20px auto;
- 
+
   display: block;
 }
